@@ -7,7 +7,7 @@ psf = pyfits.open(filename)[0].data.copy()
 #psf = psf[20:-20,20:-20]           # if the psf should be shear
 print psf.shape
 psf /= psf.sum()
-filename='HE1104-1-1.fits'   # take one image
+filename='HE1104-1.fits'   # take one image
 hs = pyfits.open(filename)[0].data.copy()
 
 x1=57-len(psf)/2     #where to put the psf

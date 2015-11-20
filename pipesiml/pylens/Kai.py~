@@ -15,7 +15,6 @@ file1.close()
 # zp = 25.9463 (for F160W, always)
 # Create surface brightness objects that define the model
 for i in range(0,len(para)):
-   j=0 
    lensGal = SBModels.Sersic('lens',{'x':para[i,0],'y':para[i,1],'re':para[i,2],'q':para[i,3],'pa':para[i,4],'n':para[i,5]})
    mag_lens = para[i,6]                            #remember to change the para with pixel*4
    zp = 25.9463
@@ -37,11 +36,11 @@ for i in range(0,len(para)):
    lenses = [lensMass,shear]
 
 #create the coordinate grids that the image will be evaluated on
-   y,x = iT.coords((240,240))
+   y,x = iT.coords((240,240))   #with higher resolution 60*4
 
 # create a PSF   
    import pyfits
-   psf = pyfits.open('sub400.fits'.format(j+1))[0].data.copy()
+   psf = pyfits.open('sub400.fits')[0].data.copy()
    psf /= psf.sum()
 
 # Form the image and convolve (convolution returns the image and FFT'd PSF)
@@ -55,7 +54,7 @@ for i in range(0,len(para)):
    #pylab.show()
 
   
-   pyfits.PrimaryHDU(img).writeto('HE1104-{0}-{1}.fits'.format(i+1,j+1),clobber=True)
+   pyfits.PrimaryHDU(img).writeto('../addPSF/HE1104-{0}-{1}.fits'.format(i+1,j+1),clobber=True)
    
 
 
