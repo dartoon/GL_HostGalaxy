@@ -1,0 +1,11 @@
+the steps to get the mask:
+1. use ds9 to get the region we want to mask ([upline]region-shape-polygon).
+2. save the region to *.reg ([midline]-region-save-out1.reg)
+3. save the other region 	#ds9poly can only work with one circle
+4. go to shell: 
+		../testmask/ds9poly out1.reg > out1
+		../testmask/ds9poly out2.reg > out2
+		../testmask/fillpoly out1 mask1.txt
+		../testmask/fillpoly out2 mask2.txt    #mask1 and mask2 give all the pixels in the mask
+
+		run crtmask.py

@@ -23,6 +23,6 @@ for i in range(len(a)):
     dd=d[a[i]:108+a[i],b[i]:108+b[i]]
     aaa=block(dd,(27,27))
 
-    pyfits.PrimaryHDU(aaa).writeto('psf{0}.fits'.format(i+1),clobber=True)
+    pyfits.PrimaryHDU(aaa).writeto('binpsf/psf{0}.fits'.format(i+1),clobber=True)
 
 

@@ -1,0 +1,19 @@
+Host galaxy:
+
+Re=2.4 (pix)
+n=1.33
+q=0.77
+pa=2.093
+
+Lens light:
+Re=18.2
+n=4
+q=0.81
+pa=1.975
+
+Lens mass (power law)
+r=2.05
+q=0.81
+
+exptime=1000s
+F814

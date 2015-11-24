@@ -1,0 +1,54 @@
+# glee -f 4 esmod_1
+
+chi2type           16
+minimiser       siman
+seed                1
+
+siman_iter          1
+siman_nT        10000
+siman_dS           10
+siman_Sf          1.2
+siman_k             2
+siman_Ti          100
+siman_Tf          1.2
+siman_Tmin          1
+
+mcmc_n           1000
+mcmc_dS           0.1
+mcmc_dSini          0
+mcmc_k              2
+
+lenses_vary 2
+
+    spemd
+    4.970800  #x-coord   gaussian:4.9708,0.05  step:0.1
+    5.009400  #y-coord   gaussian:5.0094,0.05  step:0.1
+    0.800000  #b/a       flat:0.3,1  step:0.06
+    1.972200  #theta     noprior:  step:0.03
+    1.100000  #theta_e   flat:0,3  scale:  step:0.05
+  1.0000e-04  #r_core    exact:
+    0.50000  #gam       flat:0.3,0.7  step:0.05
+  
+    shear
+    0.01 #magnitude  flat:0.0,0.1  step:0.01
+    1.000000  #theta     noprior: step:0.5
+
+
+
+esources 1
+
+    Dds/Ds    1.000000  exact:
+    esource_ngy          20
+    esource_dx           0.050000
+    esource_data         sersic_F814W_resid.fits
+    esource_err          rms.fits
+    esource_arcmask      mask.fits
+    esource_psf          psf.fits
+    esource_regtype      curv
+    esource_regopt       SpecRegPrecSigFigOnce
+    esource_reglam       2.52586e-05
+    esource_reglamlo     1e-05
+    esource_reglamhi     1
+    esource_reglampre    1
+    esource_reglamnup    1000
+    esource_end
