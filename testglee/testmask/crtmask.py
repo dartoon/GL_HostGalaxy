@@ -1,6 +1,6 @@
 import numpy as np
 import pyfits
-filename='HE1104.fits'
+filename='drimage.fits'
 nn = pyfits.open(filename)[0].data.copy()	#input simulate data to nn
 nn=nn.T*0
 f=open('mask1.txt','r')

@@ -1,10 +1,9 @@
 #automaticlly find the brightest position in image of the host galaxy.
+#no need to .T
 import numpy as np
 import pyfits
 from maxar import *
-def findpt(n):
-     filename='HE1104-{0}.fits'.format(n)   # take one image
-     hs = pyfits.open(filename)[0].data.copy()
+def findpt(hs):
      k=0
      a=np.empty([3,3])
      for i in range(30,len(hs)-30):

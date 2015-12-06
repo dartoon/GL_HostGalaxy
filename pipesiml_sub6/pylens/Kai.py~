@@ -36,7 +36,7 @@ for i in range(0,len(para)):
    lenses = [lensMass,shear]
 
 #create the coordinate grids that the image will be evaluated on
-   y,x = iT.coords((360,360))   #with higher resolution 60*4
+   y,x = iT.coords((360,360))   #with higher resolution 60*6
 
 # create a PSF   
    import pyfits

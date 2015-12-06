@@ -1,7 +1,7 @@
 from numpy import *
 from block import *
 import pyfits
-filename='sub600.fits'
+filename='../fits/sub600.fits'
 
 
 d = pyfits.open(filename)[0].data.copy()
@@ -23,6 +23,6 @@ for i in range(len(a)):
     dd=d[a[i]:162+a[i],b[i]:162+b[i]]
     aaa=block(dd,(27,27))
 
-    pyfits.PrimaryHDU(aaa).writeto('binpsf/psf{0}.fits'.format(i+1),clobber=True)
+    pyfits.PrimaryHDU(aaa).writeto('../fits/binpsf/psf{0}.fits'.format(i+1),clobber=True)
 
 

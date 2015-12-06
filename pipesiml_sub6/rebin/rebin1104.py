@@ -1,8 +1,8 @@
 from numpy import *
 from block import *
 import pyfits
-for l in range(4):
-   filename='add-{0}.fits'.format(l+1)   # take one image
+for l in range(3):
+   filename='../fits/add-{0}.fits'.format(l+1)   # take one image
    d = pyfits.open(filename)[0].data.copy()
    d = concatenate([d,zeros([10,len(d.T)])])
    d = concatenate([d,zeros([len(d),10])],axis=1) #expand the array
@@ -15,6 +15,6 @@ for l in range(4):
    for i in range(len(a)):
    	  dd=d[a[i]:360+a[i],b[i]:360+b[i]]   #the size before bin
    	  aaa=block(dd,(60,60))
-	  pyfits.PrimaryHDU(aaa).writeto('binall/sam-{0}-{1}.fits'.format(l+1,i+1),clobber=True)
+	  pyfits.PrimaryHDU(aaa).writeto('../fits/binall/sam-{0}-{1}.fits'.format(l+1,i+1),clobber=True)
 	
 

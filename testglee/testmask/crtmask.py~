@@ -12,6 +12,6 @@ f.close()
 msk=np.concatenate([msk1,msk2])
 for i in range(len(msk)):
    nn[msk[i,0],msk[i,1]]=1
-pyfits.PrimaryHDU(nn).writeto('mask.fits',clobber=True)
+pyfits.PrimaryHDU(nn.T).writeto('mask.fits',clobber=True)
 
 
