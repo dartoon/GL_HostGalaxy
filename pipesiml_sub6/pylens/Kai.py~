@@ -54,7 +54,7 @@ for i in range(0,len(para)):
    #pylab.show()
 
   
-   pyfits.PrimaryHDU(img).writeto('../addPSF/HE1104-{0}.fits'.format(i+1),clobber=True)
+   pyfits.PrimaryHDU(img).writeto('HE1104-{0}.fits'.format(i+1),clobber=True)
    
 
 

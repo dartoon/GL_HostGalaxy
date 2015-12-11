@@ -31,5 +31,6 @@ for i in `seq 1 3`;do        #the number of parameter
    echo "cl<drirms${i}.cl; logout" | cl
 done
 echo "cl<dripsf.cl; logout" | cl
+python nordri.py
 rm driall* drirms*.cl *w.fits
 

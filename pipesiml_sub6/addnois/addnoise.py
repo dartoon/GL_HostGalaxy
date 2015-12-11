@@ -11,7 +11,7 @@ for l in range(3):
 	expshort=26.
 	bnoifaint=(nn/(2*explong+expshort)+stddshort**2+2*stddlong**2)**0.5			#cacul. noise	
 	bnoibright=(nn/expshort+stddshort**2)**0.5
-        rms=bnoibright*[nn>25.]+bnoifaint*[nn<25.]                              #add different to differnet area
+        rms=bnoibright*[nn>14.]+bnoifaint*[nn<14.]                              #add different to differnet area
 	#rms=np.random.normal(0,bnoi)+bkg
 	rms=rms.reshape(len(nn),len(nn))
 	adno=np.random.normal(0,rms)

@@ -1,0 +1,17 @@
+use ./auto.sh to start the simulation
+
+psf(based on tinytim sub=6)
+Two psf with different size have already been generated. The small one is used as the real PSF into pylens, driz and glee. The large one is used for adding to the arc as the QSO. 
+
+pylens(based on python)
+By given the PSF and the set of parameter, the lensed image without QSO will be generated.
+
+addPSF(based on python)
+To QSO will be add to the brightest pixel of the arc automatically. The brightness of the QSO can be changed in the addPSF.py 
+
+rebin(python)
+Bin sub=6 image together in to large pixel.(Set the dithering parameter in this step)
+
+
+addnois(python)
+drizzle(Ureka_iraf)
