@@ -1,3 +1,4 @@
+#output the max brightness around one pixel
 import numpy as np
 def maxar(arr,(i,j)):
    c=arr[i-3:i+4,j-3:j+4]

@@ -1,4 +1,5 @@
 #automaticlly find the brightest position in image of the host galaxy.
+#no need to .T
 import numpy as np
 import pyfits
 from maxar import *

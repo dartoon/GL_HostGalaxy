@@ -1,3 +1,4 @@
+#from high resoluted images (sub=6) to lower one (bin together)
 from numpy import *
 from block import *
 import pyfits

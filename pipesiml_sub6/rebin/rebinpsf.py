@@ -9,7 +9,6 @@ d = pyfits.open(filename)[0].data.copy()
 #d = concatenate([zeros([len(d),4]),d],axis=1) #expand the array to use '-' drizzle
 d = concatenate([d,zeros([10,len(d.T)])])
 d = concatenate([d,zeros([len(d),10])],axis=1) #expand the array
-print d.shape
 
 #print sum(d[65:69,67:71])
 #[0:136] x ,y -> y, x
