@@ -20,4 +20,11 @@ for i in range(3):
 	rms *=orrms.sum()
 	rms =rms **0.5
 	pyfits.PrimaryHDU(rms).writeto('rms-{0}.fits'.format(i+1),clobber=True)
+	filename='driarc{0}.fits'.format(i+1)
+	arc = pyfits.open(filename)[0].data.copy()
+	filename='../fits/HE_arc-{0}.fits'.format(i+1)
+	orarc = pyfits.open(filename)[0].data.copy()
+	arc /=arc.sum()
+	arc *=orarc.sum()
+	pyfits.PrimaryHDU(arc).writeto('HE_arc-{0}.fits'.format(i+1),clobber=True)
 

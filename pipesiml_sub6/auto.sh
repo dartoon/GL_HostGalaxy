@@ -5,6 +5,7 @@ mkdir fits fits/binall fits/binpsf fits/noise
 cp tinytim/sub1000.fits tinytim/sub600.fits fits
 cd pylens
 python Kai.py
+python Kai_arc.py
 echo pylens
 
 cd ../addPSF         #need test1000.fits from tinytim in fits 
@@ -14,6 +15,7 @@ echo addPSF
 cd ../rebin
 python rebin1104.py
 python rebinpsf.py
+python rebin_arc.py
 echo rebin
 
 cd ../addnois
@@ -29,8 +31,11 @@ for i in `seq 1 3`;do        #the number of parameter
    echo "cl<driall${i}.cl; logout" | cl
    sed "s/-1-/-${i}-/g;s/rms1/rms${i}/g" driRMS.cl > drirms${i}.cl
    echo "cl<drirms${i}.cl; logout" | cl
+   sed "s/-1-/-${i}-/g;s/arc1/arc${i}/g" driARC.cl > driarc${i}.cl
+   echo "cl<driarc${i}.cl; logout" | cl
 done
 echo "cl<dripsf.cl; logout" | cl
 python nordri.py
-rm driall* drirms*.cl *w.fits
+python mask.py
+rm driall* drirms*.cl driarc*.cl *w.fits
 
