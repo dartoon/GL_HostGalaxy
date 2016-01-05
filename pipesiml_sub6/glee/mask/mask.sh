@@ -5,4 +5,4 @@
 ../mask/fillpoly out1 mask1
 ../mask/fillpoly out2 mask2
 python crtmask.py
-
+rm boundary mask1 mask2 out1 out2

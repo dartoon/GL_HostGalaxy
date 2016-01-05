@@ -1,6 +1,6 @@
 import numpy as np
 import pyfits
-filename='drimage1.fits'
+filename='arc.fits'
 nn = pyfits.open(filename)[0].data.copy()	#input simulate data to nn
 nn=nn.T*0
 f=open('mask1','r')
