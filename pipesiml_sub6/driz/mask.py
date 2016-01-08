@@ -5,7 +5,7 @@ for i in range(3):
 	filename='driarc{0}.fits'.format(i+1)
 	arc = pyfits.open(filename)[0].data.copy()
 	filename='../fits/HE_arc-{0}.fits'.format(i+1)
-	thre=arc.max()/7
+	thre=arc.max()/8
 	print thre
 	cell=np.zeros([len(arc),len(arc)])
 	for m in range(len(arc)):

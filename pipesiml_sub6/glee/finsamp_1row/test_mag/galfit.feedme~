@@ -35,7 +35,7 @@ P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
  1) 9.652  17.277  1 1  #  position x, y
  3) 20.5000     1          #  Integrated magnitude	
  4) 9.7500      1          #  R_e (half-light radius)   [pix]
- 5) 2.0000      0          #  Sersic index n (de Vaucouleurs n=4) 
+ 5) 2.0000      1          #  Sersic index n (de Vaucouleurs n=4) 
  6) 0.0000      0          #     ----- 
  7) 0.0000      0          #     ----- 
  8) 0.0000      0          #     ----- 
