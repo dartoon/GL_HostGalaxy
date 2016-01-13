@@ -1,4 +1,4 @@
-# glee -M -i HE
+# glee -f 2 HE.001
 
 chi2type           16
 minimiser       siman

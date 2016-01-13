@@ -1,7 +1,7 @@
 from numpy import *
 from block import *
 import pyfits
-filename='../fits/sub600.fits'
+filename='../fits/sub1000.fits'
 
 
 d = pyfits.open(filename)[0].data.copy()
@@ -10,7 +10,6 @@ d = pyfits.open(filename)[0].data.copy()
 d = concatenate([d,zeros([10,len(d.T)])])
 d = concatenate([d,zeros([len(d),10])],axis=1) #expand the array
 sc=(len(d.T)-10)/6
-print sc
 #print sum(d[65:69,67:71])
 #[0:136] x ,y -> y, x
 ####   y    x

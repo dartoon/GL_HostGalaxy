@@ -19,6 +19,9 @@ for l in range(3):
 	y2=b2-len(psf)/2
 	cell=np.zeros([900,900])
 	sw=(len(cell)-len(hs))/2
+	#print x2,y2
+	x2=118
+	y2=96
 	for m in range(len(hs)):
 	   for n in range(len(hs)):
 		cell[m+270,n+270]+=hs[m,n]           #put all image into a larger frame

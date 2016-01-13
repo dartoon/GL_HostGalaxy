@@ -19,13 +19,16 @@ for l in range(3):
 	y2=b2-len(psf)/2
 	cell=np.zeros([900,900])
 	sw=(len(cell)-len(hs))/2
+	#print x2,y2
+	x2=118
+	y2=96
 	for m in range(len(hs)):
 	   for n in range(len(hs)):
 		cell[m+270,n+270]+=hs[m,n]           #put all image into a larger frame
 	for i in range(len(psf)):
    	   for j in range(len(psf)):
-		cell[i+x1+270,j+y1+270]+=psf[i,j]*880
-		cell[i+x2+270,j+y2+270]+=psf[i,j]*2500
+		cell[i+x1+270,j+y1+270]+=psf[i,j]*1000
+		cell[i+x2+270,j+y2+270]+=psf[i,j]*2900
 	pyfits.PrimaryHDU(cell.T).writeto('../fits/bfadd-{0}.fits'.format(l+1),clobber=True)
 
 	sh= np.zeros([len(hs),len(hs)])        #shear the lager frame to regular one

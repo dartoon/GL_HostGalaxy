@@ -1,4 +1,4 @@
-# glee -M -i HE1104.001
+# glee -f 2 HE1104.001.001
 
 chi2type           18
 minimiser       siman
@@ -40,8 +40,8 @@ sources 1
 
     Dds/Ds    1.000000  exact:
     source weighted
-    srcx      3.042617  exact:
-    srcy      2.566053  exact:
+    srcx      3.120575  exact:
+    srcy      2.518526  exact:
     2
     2.240000      2.800000  error:0.1
     5.200000      4.100000  error:0.1

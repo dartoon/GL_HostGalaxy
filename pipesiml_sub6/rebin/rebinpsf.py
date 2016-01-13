@@ -1,7 +1,7 @@
 from numpy import *
 from block import *
 import pyfits
-filename='../fits/sub600.fits'
+filename='../fits/sub1000.fits'
 
 
 d = pyfits.open(filename)[0].data.copy()
