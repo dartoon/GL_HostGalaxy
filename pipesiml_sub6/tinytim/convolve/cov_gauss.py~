@@ -5,6 +5,6 @@ filename='sub600.fits'
 psf = pyfits.open(filename)[0].data.copy().T
 psf /= psf.sum()
 
-img = ndimage.gaussian_filter(psf, sigma=3)
+img = ndimage.gaussian_filter(psf, sigma=3.5)
 
 pyfits.PrimaryHDU(img.T).writeto('psf_cov.fits',clobber=True)

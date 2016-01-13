@@ -5,6 +5,6 @@ psf = pyfits.open(filename)[0].data.copy().T
 psf /= psf.sum()
 #filename='sub1000.fits'
 #img = pyfits.open(filename)[0].data.copy().T
-img /= psf
+img = psf
 im=convolve(img,psf)
 pyfits.PrimaryHDU(im.T).writeto('sub1000.fits',clobber=True)

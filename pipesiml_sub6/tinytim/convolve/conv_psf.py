@@ -7,4 +7,4 @@ psf /= psf.sum()
 #img = pyfits.open(filename)[0].data.copy().T
 img = psf
 im=convolve(img,psf)
-pyfits.PrimaryHDU(im.T).writeto('sub1000.fits',clobber=True)
+pyfits.PrimaryHDU(im.T).writeto('cov_psf_psf.fits',clobber=True)
