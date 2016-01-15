@@ -11,6 +11,9 @@ for i in range(12):
 	arc=pyfits.open('../fits/binall/arc-{1}-{0}.fits'.format(i+1,j+1),mode = 'update')
     	arc[0].header["EXPTIME"]=1
     	arc.flush()
+	psf=pyfits.open('../fits/binall/sam_psf-{1}-{0}.fits'.format(i+1,j+1),mode = 'update')
+    	psf[0].header["EXPTIME"]=1
+    	psf.flush()
     ps=pyfits.open('../fits/binpsf/psf{0}.fits'.format(i+1),mode = 'update')
     ps[0].header["EXPTIME"]=1
     ps.flush()

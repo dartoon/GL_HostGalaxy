@@ -10,7 +10,7 @@ for l in range(3):
 	expshort=26.
 	bnoifaint=(nn/(2*explong+expshort)+stddshort**2+2*stddlong**2)**0.5			#cacul. noise	
 	bnoibright=(nn/expshort+stddshort**2)**0.5
-        rms=bnoibright*[nn>70.]+bnoifaint*[nn<70.]                              #set threshold to allow 3-4 central pixels to be short exptim.
+        rms=bnoibright*[nn>10.]+bnoifaint*[nn<10.]                              #set threshold to allow 3-4 central pixels to be short exptim. Used to be 10
 	rms=rms.reshape(len(nn),len(nn))
 	adno=np.random.normal(0,rms)
 	nn+=adno	

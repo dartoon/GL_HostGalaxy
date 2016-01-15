@@ -10,6 +10,9 @@ for l in range(3):
 	filename='../fits/HE_arc-{0}.fits'.format(l+1)   # take one image
 	hsa = pyfits.open(filename)[0].data.copy()
 	(a1,a2),(b1,b2)=findpt(hsa)              #finding two corresponding positions where to add from two arcs
+	#print a1,a2
+	#a1=181
+	#a2=181
 	filename='../fits/HE1104-{0}.fits'.format(l+1)   # take one image
 	hs = pyfits.open(filename)[0].data.copy()
 	hs=hs.T
@@ -18,22 +21,33 @@ for l in range(3):
 	x2=b1-len(psf)/2
 	y2=b2-len(psf)/2
 	cell=np.zeros([900,900])
+	celup=np.zeros([900,900])
+	cellw=np.zeros([900,900])
 	sw=(len(cell)-len(hs))/2
 	#print x2,y2
-	x2=118
-	y2=96
+	#x2=118
+	#y2=96
 	for m in range(len(hs)):
 	   for n in range(len(hs)):
 		cell[m+270,n+270]+=hs[m,n]           #put all image into a larger frame
 	for i in range(len(psf)):
    	   for j in range(len(psf)):
-		cell[i+x1+270,j+y1+270]+=psf[i,j]*800
-		cell[i+x2+270,j+y2+270]+=psf[i,j]*2000
+		cellw[i+x1+270,j+y1+270]+=psf[i,j]
+		celup[i+x2+270,j+y2+270]+=psf[i,j]
+	cell+=cellw*1000+celup*2900
 	pyfits.PrimaryHDU(cell.T).writeto('../fits/bfadd-{0}.fits'.format(l+1),clobber=True)
 
-	sh= np.zeros([len(hs),len(hs)])        #shear the lager frame to regular one
+	sh= np.zeros([len(hs),len(hs)])        #shear the lager frame image to regular one
 	for i in range(len(hs)):
  	  for j in range(len(hs)):
 		sh[i,j]=cell[sw+i,sw+j]
 	pyfits.PrimaryHDU(sh.T).writeto('../fits/add-{0}.fits'.format(l+1),clobber=True)
+
+	sh= np.zeros([len(hs),len(hs)])        #shear the lager frame PSF to regular one
+	for i in range(len(hs)):
+ 	  for j in range(len(hs)):
+		sh[i,j]=celup[sw+i,sw+j]
+	pyfits.PrimaryHDU(sh.T).writeto('../fits/spsf-{0}.fits'.format(l+1),clobber=True)
+
+
 	

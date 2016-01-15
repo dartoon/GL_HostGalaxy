@@ -13,7 +13,7 @@ siman_Ti           10
 siman_Tf          1.2
 siman_Tmin          1
 
-mcmc_n          20000
+mcmc_n          10000
 mcmc_dS          0.05
 mcmc_dSini          0
 mcmc_k              2

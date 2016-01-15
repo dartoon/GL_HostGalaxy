@@ -42,18 +42,18 @@ esources 1
     esource_ngy          30
     esource_ngx          98
     esource_dx           0.080000
-    esource_data         HE-2.fits
-    esource_err          rms-2.fits
-    esource_arcmask      mask-2.fits
+    esource_data         HE-1.fits
+    esource_err          rms-1.fits
+    esource_arcmask      mask-1.fits
     esource_lensmask     lensmask.fits
-    esource_psf          psf.fits
-    esource_sub_agn_psf  psf.fits
+    esource_psf          psf-s-1.fits
+    esource_sub_agn_psf  psf-s-1.fits
     esource_sub_agn_psf_factor     1
-    esource_sub_esr_psf  psf.fits
+    esource_sub_esr_psf  psf-s-1.fits
     esource_sub_esr_psf_factor     1
     esource_regtype      curv
     esource_regopt       SpecRegPrecSigFigOnce
-    esource_reglam       0.00149012
+    esource_reglam       0.000372529
     esource_reglamlo     1e-12
     esource_reglamhi     100000
     esource_reglampre    1
@@ -68,11 +68,11 @@ esources 1
             1.950000  #r_eff     flat:1.8,2.5  step:0.05
             5.000000  #n_sersic  flat:4,7  step:0.1
         psf
-            1.937263  #x-coord   noprior:  step:0.01
-            3.045133  #y-coord   noprior:  step:0.01
-          900.000000  #amp       noprior:  min:0  step:10
+            1.920000  #x-coord   noprior:  step:0.01
+            3.040000  #y-coord   noprior:  step:0.01
+          800.000000  #amp       noprior:  min:0  step:10
         psf
-            4.994077  #x-coord   noprior:  step:0.01
-            4.519357  #y-coord   noprior:  step:0.01
-         2900.000000  #amp       noprior:  min:0  step:20
+            4.960000  #x-coord   noprior:  step:0.01
+            4.480000  #y-coord   noprior:  step:0.01
+         2000.000000  #amp       noprior:  min:0  step:20
     esource_end

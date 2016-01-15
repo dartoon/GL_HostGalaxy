@@ -9,8 +9,8 @@ for i in range(3):
 	cell=np.zeros([len(arc),len(arc)])
 	for m in range(len(arc)):
 	   for n in range(len(arc)):
-		#if arc[m,n]>thre:
-		if arc[m,n]>0.08:
+		if arc[m,n]>thre:
+		#if arc[m,n]>0.04:
 		    cell[m,n]=1
 	pyfits.PrimaryHDU(cell).writeto('mask-{0}.fits'.format(i+1),clobber=True)	
 			

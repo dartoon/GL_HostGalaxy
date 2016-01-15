@@ -33,8 +33,12 @@ for i in `seq 1 3`;do        #the number of parameter
    echo "cl<drirms${i}.cl; logout" | cl
    sed "s/-1-/-${i}-/g;s/arc1/arc${i}/g" driARC.cl > driarc${i}.cl
    echo "cl<driarc${i}.cl; logout" | cl
+   sed "s/-1-/-${i}-/g;s/_psf1/_psf${i}/g" driS_psf.cl > dris_psf${i}.cl
+   echo "cl<dris_psf${i}.cl; logout" | cl
 done
 echo "cl<dripsf.cl; logout" | cl
+python sh_spsf.py
 python nordri.py
-rm driall* drirms*.cl *w.fits
+python mask.py
+rm driall* drirms*.cl driarc*.cl dris_psf*.cl *w.fits
 
