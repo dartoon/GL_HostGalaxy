@@ -53,7 +53,7 @@ esources 1
     esource_sub_esr_psf_factor     1
     esource_regtype      curv
     esource_regopt       SpecRegPrecSigFigOnce
-    esource_reglam       4.65661e-05
+    esource_reglam       0.000931323
     esource_reglamlo     1e-12
     esource_reglamhi     100000
     esource_reglampre    1
@@ -70,7 +70,7 @@ esources 1
         psf
             1.985000  #x-coord   noprior:  step:0.01
             3.145000  #y-coord   noprior:  step:0.01
-         800.000000  #amp       noprior:  min:0  step:10
+          800.000000  #amp       noprior:  min:0  step:10
         psf
             5.065000  #x-coord   noprior:  step:0.01
             4.585000  #y-coord   noprior:  step:0.01
