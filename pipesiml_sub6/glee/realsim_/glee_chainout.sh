@@ -1,5 +1,6 @@
 #!/bin/bash
 #cat chain_NO
+python glee_chain.py
 i=1
 cat chain_NO| while read line
 do   

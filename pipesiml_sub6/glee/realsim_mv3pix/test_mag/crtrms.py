@@ -14,6 +14,6 @@ print np.shape(gal[1,1,:])
 rms=np.empty([30,30])
 for i in range(30):
   for j in range (30):
-    rms[i,j]=np.var(gal[i,j,:])
+    rms[i,j]=np.std(gal[i,j,:])
 pyfits.PrimaryHDU(rms.T).writeto('rms.fits',clobber=True)
   

@@ -11,4 +11,6 @@ do
    rm HE.*${line}_es001_im.fits
    i=$((i+1))  
 done
+#rm HE.001_00* chain_NO    #file name to output
+mv gal*.fits ./test_mag
 #rm HE.001.001_00*
