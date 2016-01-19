@@ -1,7 +1,15 @@
 from numpy import *
 import pyfits
+
+file1 = open('../pylens/HE1104.txt','r')
+para = loadtxt(file1)
+file1.close()
+#print len(para)
+ln=len(para)
+
+
 for i in range(12):
-    for j in range(3):
+    for j in range(ln):
     	hdu=pyfits.open('../fits/noise/adnois-{1}-{0}.fits'.format(i+1,j+1),mode = 'update')
     	hdu[0].header["EXPTIME"]=1
     	hdu.flush()

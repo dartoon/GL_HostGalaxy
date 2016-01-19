@@ -63,7 +63,7 @@ esources 1
     esource_sub_esr_psf_factor     1
     esource_regtype      curv
     esource_regopt       SpecRegPrecSigFigOnce
-    esource_reglam       2343.75
+    esource_reglam       292.969
     esource_reglamlo     1e-12
     esource_reglamhi     100000
     esource_reglampre    1

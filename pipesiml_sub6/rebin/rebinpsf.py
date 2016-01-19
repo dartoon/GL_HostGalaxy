@@ -2,8 +2,6 @@ from numpy import *
 from block import *
 import pyfits
 filename='../fits/sub1000.fits'
-
-
 d = pyfits.open(filename)[0].data.copy()
 #d = concatenate([zeros([4,len(d.T)]),d])
 #d = concatenate([zeros([len(d),4]),d],axis=1) #expand the array to use '-' drizzle

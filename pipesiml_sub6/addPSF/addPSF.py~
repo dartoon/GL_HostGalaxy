@@ -2,12 +2,21 @@
 from findpt import *
 import numpy as np
 import pyfits
+
+file1 = open('../pylens/HE1104.txt','r')
+para = np.loadtxt(file1)
+file1.close()
+#print len(para)
+ln=len(para)
+print ln
+
 filename='../fits/sub1000.fits'
 psf = pyfits.open(filename)[0].data.copy().T
 #psf = psf[40:-40,40:-40]           # if the psf should be shear
 psf /= psf.sum()
-for l in range(3):
+for l in range(ln):
 	filename='../fits/HE_arc-{0}.fits'.format(l+1)   # take one image
+	#print l
 	hsa = pyfits.open(filename)[0].data.copy()
 	(a1,a2),(b1,b2)=findpt(hsa)              #finding two corresponding positions where to add from two arcs
 	#print a1,a2
@@ -34,7 +43,7 @@ for l in range(3):
    	   for j in range(len(psf)):
 		cellw[i+x1+270,j+y1+270]+=psf[i,j]
 		celup[i+x2+270,j+y2+270]+=psf[i,j]
-	cell+=cellw*1000+celup*2900
+	cell+=cellw*800+celup*2000
 	pyfits.PrimaryHDU(cell.T).writeto('../fits/bfadd-{0}.fits'.format(l+1),clobber=True)
 
 	sh= np.zeros([len(hs),len(hs)])        #shear the lager frame image to regular one

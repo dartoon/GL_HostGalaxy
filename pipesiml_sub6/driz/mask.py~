@@ -1,10 +1,17 @@
 import numpy as np
 import pyfits
 
-for i in range(3):
-	filename='HE_arc-{0}.fits'.format(i+1)
+file1 = open('../pylens/HE1104.txt','r')
+para = np.loadtxt(file1)
+file1.close()
+#print len(para)
+ln=len(para)
+
+
+for i in range(ln):
+	filename='../fits/final/HE_arc-{0}.fits'.format(i+1)
 	arc = pyfits.open(filename)[0].data.copy()
-	thre=arc.max()/6
+	thre=arc.max()/9
 	print thre
 	cell=np.zeros([len(arc),len(arc)])
 	for m in range(len(arc)):
@@ -12,5 +19,5 @@ for i in range(3):
 		if arc[m,n]>thre:
 		#if arc[m,n]>0.04:
 		    cell[m,n]=1
-	pyfits.PrimaryHDU(cell).writeto('mask-{0}.fits'.format(i+1),clobber=True)	
+	pyfits.PrimaryHDU(cell).writeto('../fits/final/mask-{0}.fits'.format(i+1),clobber=True)	
 			

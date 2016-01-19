@@ -1,6 +1,13 @@
 import numpy as np
 import pyfits
-for l in range(3):
+
+file1 = open('../pylens/HE1104.txt','r')
+para = np.loadtxt(file1)
+file1.close()
+#print len(para)
+ln=len(para)
+
+for l in range(ln):
    for i in range(12):   
 	filename='../fits/binall/sam-{0}-{1}.fits'.format(l+1,i+1)
 	nn = pyfits.open(filename)[0].data.copy()	#input simulate data to nn

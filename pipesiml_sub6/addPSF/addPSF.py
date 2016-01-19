@@ -2,12 +2,21 @@
 from findpt import *
 import numpy as np
 import pyfits
+
+file1 = open('../pylens/HE1104.txt','r')
+para = np.loadtxt(file1)
+file1.close()
+#print len(para)
+ln=len(para)
+#print ln
+
 filename='../fits/sub1000.fits'
 psf = pyfits.open(filename)[0].data.copy().T
 #psf = psf[40:-40,40:-40]           # if the psf should be shear
 psf /= psf.sum()
-for l in range(3):
+for l in range(ln):
 	filename='../fits/HE_arc-{0}.fits'.format(l+1)   # take one image
+	#print l
 	hsa = pyfits.open(filename)[0].data.copy()
 	(a1,a2),(b1,b2)=findpt(hsa)              #finding two corresponding positions where to add from two arcs
 	#print a1,a2

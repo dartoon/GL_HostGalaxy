@@ -2,7 +2,12 @@
 from numpy import *
 from block import *
 import pyfits
-for l in range(3):
+file1 = open('../pylens/HE1104.txt','r')
+para = loadtxt(file1)
+file1.close()
+#print len(para)
+ln=len(para)
+for l in range(ln):
    filename='../fits/HE_arc-{0}.fits'.format(l+1)   # take one image
    d = pyfits.open(filename)[0].data.copy()
    d = concatenate([d,zeros([10,len(d.T)])])
