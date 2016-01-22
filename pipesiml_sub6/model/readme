@@ -1,0 +1,5 @@
+to generatre the files use ./automodel.sh
+
+run each file use ./gleeauto.sh
+glee_chain.py and glee_chainout.sh are used to get mcmc chain to get host image.
+test_mag can get the inforamtion of modelled mag automatically

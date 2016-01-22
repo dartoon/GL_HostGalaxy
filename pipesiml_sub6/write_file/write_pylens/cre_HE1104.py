@@ -7,7 +7,7 @@ inpu='# l_x l_y  l_re  l_q  l_pa  l_n  l_mag  s_x  s_y  s_re  s_q  s_pa  s_n  s_
 for i in range(3):
    t[4]=[1.2,1,0.8][i]
    for j in range(3):
-      t[0]=[12.0,36.0,72.0][j]
+      t[0]=[18.0,36.0,54.0][j]
       for k in range(2):
 	t[1]=[0.7,1.0][k]
 	for l in range(2):

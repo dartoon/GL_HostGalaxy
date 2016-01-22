@@ -1,11 +1,11 @@
 
-#  Input menu file: galfit-24.feedme
+#  Input menu file: galfit-22.feedme
 
-#  Chi^2/nu = 7.797,  Chi^2 = 5918.225,  Ndof = 759
+#  Chi^2/nu = 5.321,  Chi^2 = 3836.717,  Ndof = 721
 
 ================================================================================
 # IMAGE and GALFIT CONTROL PARAMETERS
-A) gal24.fits          # Input data image (FITS file)
+A) gal22.fits          # Input data image (FITS file)
 B) imgblock.fits       # Output data image block
 C) rms.fits            # Sigma image name (made from data if blank or "none") 
 D) none                # Input PSF image and (optional) diffusion kernel
@@ -38,15 +38,15 @@ P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
 
 # Component number: 1
  0) sersic                 #  Component type
- 1) 15.1079  12.5392  1 1  #  Position x, y
- 3) 24.6330     1          #  Integrated magnitude 
- 4) 0.0019      1          #  R_e (effective radius)   [pix]
- 5) 19.9720     1          #  Sersic index n (de Vaucouleurs n=4) 
+ 1) 16.9778  11.9839  1 1  #  Position x, y
+ 3) 21.9829     1          #  Integrated magnitude 
+ 4) 6.3604      1          #  R_e (effective radius)   [pix]
+ 5) 0.2651      1          #  Sersic index n (de Vaucouleurs n=4) 
  6) 0.0000      0          #     ----- 
  7) 0.0000      0          #     ----- 
  8) 0.0000      0          #     ----- 
- 9) 0.0424      1          #  Axis ratio (b/a)  
-10) 2.8821      1          #  Position angle (PA) [deg: Up=0, Left=90]
+ 9) 0.7900      1          #  Axis ratio (b/a)  
+10) -52.6902    1          #  Position angle (PA) [deg: Up=0, Left=90]
  Z) 0                      #  Skip this model in output image?  (yes=1, no=0)
 
 ================================================================================
