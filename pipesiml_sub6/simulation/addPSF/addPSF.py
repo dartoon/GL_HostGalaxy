@@ -43,7 +43,7 @@ for l in range(ln):
    	   for j in range(len(psf)):
 		cellw[i+x1+270,j+y1+270]+=psf[i,j]
 		celup[i+x2+270,j+y2+270]+=psf[i,j]
-	cell+=cellw*800+celup*2000
+	cell+=cellw*8+celup*20
 	pyfits.PrimaryHDU(cell.T).writeto('../fits/bfadd-{0}.fits'.format(l+1),clobber=True)
 
 	sh= np.zeros([len(hs),len(hs)])        #shear the lager frame image to regular one

@@ -2,7 +2,7 @@ import numpy as np
 import pyfits
 
 
-filename='mask.fits'
+filename='flux.fits'
 sr = pyfits.open(filename)[0].data.copy()
 cell=np.ones([len(sr),len(sr)])
 for m in range(len(sr)):

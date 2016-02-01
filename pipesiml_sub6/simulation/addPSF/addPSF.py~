@@ -8,7 +8,7 @@ para = np.loadtxt(file1)
 file1.close()
 #print len(para)
 ln=len(para)
-print ln
+#print ln
 
 filename='../fits/sub1000.fits'
 psf = pyfits.open(filename)[0].data.copy().T

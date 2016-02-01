@@ -4,4 +4,5 @@ for i in `seq 1 4`;do
   ./gleeauto.sh
   cd ..
   #echo $((${i}+4))
+  cp -r samp${i} ../glee_result
 done

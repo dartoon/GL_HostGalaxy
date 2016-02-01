@@ -2,12 +2,12 @@ import numpy as np
 import pyfits
 for l in range(30):
   if l==0:
-    filename='gal{0}.fits'.format(l+1)
+    filename='flux{0}.fits'.format(l+1)
     a=pyfits.open(filename)[0].data.copy().T 
     gal=a
     #print np.shape(a)
   else:
-    filename='gal{0}.fits'.format(l+1)
+    filename='flux{0}.fits'.format(l+1)
     b= pyfits.open(filename)[0].data.copy().T
     gal=np.dstack([gal,b])
 print np.shape(gal[1,1,:])

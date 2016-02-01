@@ -1,0 +1,37 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+mag=np.zeros([12,30])
+a=np.zeros([4,12])
+b=np.zeros([4,12])
+for m in range(4):
+ for i in range(12):   
+    f='samp{0}/test_mag/result_gal'.format(i*4+1+m)
+    mag[i,:] = np.loadtxt(f)[:,0]
+    #print np.shape(mag),mag
+    kk=mag[i,:]
+    #print mag[i,:]!=0
+    a[m,i]=np.mean(kk[kk!=0])
+    b[m,i]=np.std(kk[kk!=0])
+    #print np.shape(a)
+ x=range(1,13)
+ plt.hold(True)
+ if m==0:
+    plt.errorbar(x,a[m]-21+0.5*m,yerr=b[m],fmt='k.')
+ if m==1:
+    plt.errorbar(x,a[m]-21+0.5*m,yerr=b[m],fmt='r.')
+ if m==2:
+    plt.errorbar(x,a[m]-21+0.5*m,yerr=b[m],fmt='y.')
+ if m==3:
+    plt.errorbar(x,a[m]-21+0.5*m,yerr=b[m],fmt='g.')
+tx=np.arange(-1,13,0.05)
+ty=tx*0
+plt.plot(tx,ty,'r')
+plt.title("Magnitude BIAS; l_eta=1.2")
+plt.xlabel("No.")
+plt.ylabel("Mag_{mod}-Mag_{real}")
+plt.ylim(-1.5,6.5)
+plt.xlim(0.5,13)
+#plt.gca().set_yscale("log")
+plt.show()
+

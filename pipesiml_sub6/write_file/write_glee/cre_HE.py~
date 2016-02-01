@@ -23,6 +23,6 @@ for i in range(0,len(para)):
 	#print replacements
         for j in replacements.keys():
           inn = inn.replace(j, replacements[j])
-	  print inn
+	  #print inn
         out.write(inn)
         out.close
