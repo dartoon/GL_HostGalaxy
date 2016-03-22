@@ -1,3 +1,0 @@
-# l:lens  s:source  sh:shear  eta:gamma
-# l_x l_y  l_re  l_q  l_pa  l_n  l_mag  s_x  s_y  s_re  s_q  s_pa  s_n  s_mag  l_mx  l_my  l_b  l_q  l_pa  l_eta  sh_x  sh_y  sh_b  sh_pa
-50.0 50.0  16.923 0.81 120.0 4.0 18.0 49.0154 50.0777 4.615 0.75 90.0 2.0 21.0 50.0 50.0 12.815 0.91 -60.901 0.8 50.0 50.0 0.0405 -47.326

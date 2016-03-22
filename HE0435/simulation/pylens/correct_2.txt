@@ -1,0 +1,13 @@
+#pixel scale = 0.13 arcsecond; zeropoint for F160W = 25.9463
+#lens mass: power law model with core = 1e-04; lens light and host light are sersic model.
+#l = lens; s = source; m = mass; sh = source host; q = b/a; pa = position angle; eir = Einstein Radius;
+#slp = slope; exshr = external shear; reff = effective radius; ll = lens light; n = sersic index
+#l-x   l-y   lm-q lm-pa lm-eir lm-slp exshr-b exshr-pa ll-mag ll-reff ll-q ll-pa ll-n s-x    s-y    sh-mag sh-reff sh-q sh-pa sh-n AGN-mag 
+#WFI2033
+#20.4846 25.1923 0.91 -60.901 12.815  1.8   0.0405  -47.326  18.0    16.923    0.81 119.981 4.0  19.5  25.27  21.0   4.615     0.7  90.0  2.0  23.
+#21.515 25.185 0.81 27.5 12.8  2.0   0.0151  -130.04  18.0    16.923   0.81 119.981 4.0  22.6  25.25  21.0   4.615     0.7  90.0  2.0  23. 
+#23.477 25.385 0.865 23.395 12.22  2.2   0.012  -70.  18.0    16.923    0.81 119.981 4.0  23.92  25.5  21.0   4.615     0.7  90.0  2.0  23.
+#HE1104
+33.185 27.931 0.702 -55.454 12.08  1.8   0.0145   -90.763  18.0    16.923    0.95 119.981 4.0  29.146  25.023  22.0   4.615     0.9  90.0  2.0
+32.262 27.623 0.792 -69.454 12.75  2.0   0.015   -70.551  18.0    16.923    0.95 119.981 4.0  28.92  26.05  22.0   4.615     0.9  90.0  2.0
+32.308 27.915 0.970 -33.231 13.3  2.2   0.0172  -62.624  18.0    16.923    0.95 119.981 4.0  30.9  27.0  22.0   4.615     0.9  90.0  2.0

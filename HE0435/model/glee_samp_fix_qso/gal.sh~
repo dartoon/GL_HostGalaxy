@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for i in `seq 1 4`;do
+      #echo $(((${i}-1)*4+1))
+      cp test_mag_norms/* samp${i}/mag_HE${i}
+      #rm samp${i}/test_mag/galfit.*
+      #cp galfit.feedme samp${i}/test_mag
+      #sed -i "/cd test_mag/d;/gal.sh/d" glee_chainout.sh 
+      cp ../../simulation/fits/final/mask-${i}.fits samp${i}      
+done

@@ -1,0 +1,113 @@
+  PID TTY      STAT   TIME COMMAND
+ 2583 ?        Sl     0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+ 2586 ?        Ss     0:02 init --user
+ 2618 ?        Sl    27:28 c:\TeamViewer\TeamViewer.exe                                                                                    
+ 2745 ?        Ss    12:00 /opt/teamviewer/tv_bin/wine/bin/wineserver
+ 2760 ?        Sl     0:39 gedit /home/dxh/GL_HostGalaxy/pipesiml_sub6/model/glee_result_1.2/sum_12_mag_fix_n.py
+ 2771 ?        Ssl    0:00 C:\windows\system32\services.exe                                                                                    
+ 2787 ?        S      0:00 dbus-launch --autolaunch=d07eab718dc34db3db66d37d00000008 --binary-syntax --close-stderr
+ 2788 ?        Ss     0:00 //bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+ 2802 ?        Ss     3:18 dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-9dDQVw1rCd
+ 2813 ?        Ss     0:00 upstart-event-bridge
+ 2819 ?        Ss     0:05 /usr/lib/x86_64-linux-gnu/hud/window-stack-bridge
+ 2842 ?        S      1:01 upstart-dbus-bridge --daemon --session --user --bus-name session
+ 2844 ?        S      0:00 upstart-dbus-bridge --daemon --system --user --bus-name system
+ 2846 ?        S      0:00 upstart-file-bridge --daemon --user
+ 2850 ?        Rl     2:15 /usr/bin/fcitx
+ 2864 ?        Ssl    0:23 /usr/lib/unity-settings-daemon/unity-settings-daemon
+ 2868 ?        Ssl    8:46 /usr/lib/x86_64-linux-gnu/hud/hud-service
+ 2871 ?        Sl     0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+ 2876 ?        S      0:01 /bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+ 2878 ?        Ssl    0:06 gnome-session --session=ubuntu
+ 2885 ?        Ssl    5:56 /usr/lib/unity/unity-panel-service
+ 2887 ?        Sl     0:06 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+ 2898 ?        Sl     0:00 /usr/lib/gvfs/gvfsd
+ 2903 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/20868/gvfs -f -o big_writes
+ 3013 ?        Sl     3:54 /usr/lib/x86_64-linux-gnu/bamf/bamfdaemon
+ 3022 ?        S<l    0:04 /usr/bin/pulseaudio --start --log-target=syslog
+ 3024 ?        Sl     0:05 /usr/lib/x86_64-linux-gnu/indicator-keyboard-service --use-gtk
+ 3028 ?        Ssl    0:00 /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
+ 3029 ?        Ssl    0:00 /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+ 3031 ?        Ssl    0:00 /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
+ 3036 ?        Ssl    0:15 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+ 3041 ?        Ssl    0:01 /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
+ 3043 ?        Ssl    0:03 /usr/lib/x86_64-linux-gnu/indicator-printers/indicator-printers-service
+ 3055 ?        Ssl    0:02 /usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service
+ 3077 ?        Ssl    0:30 /usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+ 3089 ?        Sl     0:00 /usr/lib/evolution/evolution-source-registry
+ 3093 ?        S      0:00 /usr/lib/pulseaudio/pulse/gconf-helper
+ 3095 ?        S      0:01 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+ 3109 ?        Sl     0:18 /usr/lib/dconf/dconf-service
+ 3114 ?        Sl     0:03 /usr/lib/x86_64-linux-gnu/notify-osd
+ 3124 ?        Ss     1:29 //bin/dbus-daemon --fork --print-pid 7 --print-address 9 --config-file /usr/share/fcitx/dbus/daemon.conf
+ 3128 ?        SN     0:00 /usr/bin/fcitx-dbus-watcher unix:abstract=/tmp/dbus-Ym7nBjkq2C,guid=1eed49b617a3dc58b2c6a93b56a1c656 3124
+ 3131 ?        Sl     0:17 /usr/lib/gnome-online-accounts/goa-daemon
+ 3134 ?        Sl     0:00 /usr/lib/evolution/evolution-calendar-factory
+ 3144 ?        Sl     0:01 /usr/lib/telepathy/mission-control-5
+ 3181 ?        Sl   127:08 compiz
+ 3199 ?        Sl    22:13 nautilus -n
+ 3216 ?        Sl     0:04 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+ 3220 ?        Sl     0:03 nm-applet
+ 3221 ?        Sl     0:04 /usr/lib/unity-settings-daemon/unity-fallback-mount-helper
+ 3236 ?        Sl     0:04 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+ 3253 ?        Sl     0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+ 3258 ?        Sl     0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+ 3263 ?        Sl     0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+ 3273 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-burn --spawner :1.10 /org/gtk/gvfs/exec_spaw/0
+ 3281 ?        Sl     1:57 /usr/lib/gvfs/gvfsd-trash --spawner :1.10 /org/gtk/gvfs/exec_spaw/1
+ 3311 ?        S      0:06 sogou-qimpanel-watchdog
+ 3314 ?        Sl     2:15 sogou-qimpanel
+ 3318 ?        Sl     0:26 /usr/lib/gvfs/gvfsd-metadata
+ 3326 ?        Ssl    1:50 C:\windows\system32\explorer.exe /desktop                                                                                    
+ 3385 ?        Sl     4:06 /opt/teamviewer/tv_bin/TVGuiSlave.64 13 1
+ 3388 ?        Sl     3:18 /opt/teamviewer/tv_bin/TVGuiDelegate 13 1
+ 3441 ?        Sl     0:02 telepathy-indicator
+ 3446 ?        Sl     2:36 zeitgeist-datahub
+ 3451 ?        Sl     0:17 /usr/bin/zeitgeist-daemon
+ 3457 ?        Sl     0:40 /usr/lib/x86_64-linux-gnu/zeitgeist-fts
+ 3468 ?        S      0:00 /bin/cat
+ 3532 ?        Sl     0:04 update-notifier
+ 3562 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/deja-dup/deja-dup-monitor
+ 5415 ?        Sl     0:49 evince /home/dxh/Desktop/10.1007_978-3-540-30310-7.pdf
+ 5423 ?        Sl     0:00 /usr/lib/evince/evinced
+ 6704 pts/8    Ss+    0:00 bash
+ 6710 pts/10   Ss+    0:00 bash
+ 6716 pts/12   Ss+    0:00 bash
+ 6721 pts/18   Ss+    0:00 bash
+15210 ?        Sl    28:59 gnome-terminal
+15217 ?        S      0:00 gnome-pty-helper
+20379 ?        Sl     0:16 speedcrunch
+21037 ?        Sl     0:01 /usr/lib/x86_64-linux-gnu/unity-scope-home/unity-scope-home
+21049 ?        Sl     0:04 /usr/bin/unity-scope-loader applications/applications.scope applications/scopes.scope commands.scope
+21053 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/unity-lens-files/unity-files-daemon
+21097 ?        Sl     3:49 python3 /usr/bin/youdao-dict
+21109 ?        Sl     4:25 python3 /usr/share/youdao-dict/youdao-dict-backend.py
+21126 ?        Sl     0:02 python3 /usr/share/youdao-dict/indicator-youdao.py
+21307 ?        Sl    29:03 /usr/lib/firefox/firefox
+21407 ?        Sl    17:10 /usr/lib/firefox/plugin-container /usr/lib/adobe-flashplugin/libflashplayer.so -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 21307 plugin
+23376 pts/28   Ss+    0:00 bash
+25791 pts/19   Ss+    0:00 bash
+25797 pts/20   Ss     0:00 bash
+25802 pts/29   Ss+    0:00 bash
+25807 pts/30   Ss+    0:00 bash
+25813 pts/31   Ss+    0:00 bash
+25976 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/unity-lens-music/unity-music-daemon
+25990 pts/20   T      0:00 /bin/bash ./auto_galfit1.sh
+25998 pts/28   T      0:00 /bin/bash ./auto_galfit_go.sh
+26000 pts/28   T      0:00 /bin/bash ./gal.sh
+26022 pts/29   T      0:00 /bin/bash ./auto_galfit2.sh
+26039 pts/29   T      0:00 cp ../test_mag_rms/crtmask.py~ ../test_mag_rms/crtrms.py ../test_mag_rms/crtrms.py~ ../test_mag_rms/ds9.reg~ ../test_mag_rms/galfit.feedme ../test_mag_rms/galfit.feedme~ ../test_mag_rms/galoutp.py ../test_mag_rms/galoutp.py~ ../test_mag_rms/gal.sh ../test_mag_rms/gal.sh~ ../test_mag_rms/mask.py ../test_mag_rms/mask.py~ ../test_mag_rms/readme ../test_mag_rms/readme~ samp56/test_mag
+26048 pts/20   T      0:00 rm galfit1 galfit10 galfit11 galfit12 galfit13 galfit14 galfit15 galfit16 galfit17 galfit18 galfit19 galfit2 galfit20 galfit21 galfit22 galfit23 galfit24 galfit25 galfit26 galfit27 galfit28 galfit29 galfit3 galfit30 galfit4 galfit5 galfit6 galfit7 galfit8 galfit9 galfit.feedme galfit.feedme~ galfit_n1 galfit_n10 galfit_n11 galfit_n12 galfit_n13 galfit_n14 galfit_n15 galfit_n16 galfit_n17 galfit_n18 galfit_n19 galfit_n2 galfit_n20 galfit_n21 galfit_n22 galfit_n23 galfit_n24 galfit_n25 galfit_n26 galfit_n27 galfit_n28 galfit_n29 galfit_n3 galfit_n30 galfit_n4 galfit_n5 galfit_n6 galfit_n7 galfit_n8 galfit_n9 galfit_n.feedme
+26051 pts/20   S+     0:00 /bin/bash ./auto_galfit_go1.sh
+26053 pts/20   S+     0:00 /bin/bash ./gal.sh
+26125 pts/20   S+     0:00 xterm +sb -T GALFIT -geometry 21x6 -bg green1 -e sleep 31536000
+26129 pts/32   Ss+    0:00 sleep 31536000
+26141 pts/20   S+     0:00 galfit rms_galfit_n-2.feedme
+26142 pts/20   S+     0:00 sh -c \ps x > term-search
+26143 pts/20   R+     0:00 ps x
+26181 pts/28   T      0:00 galfit rms_galfit_n-6.feedme
+26201 pts/28   T      0:00 sh -c sleep 1
+26202 pts/28   T      0:00 sleep 1
+29122 pts/28   T      0:00 /bin/bash ./auto_galfit_go.sh
+29529 pts/28   T      0:00 /bin/bash ./gal.sh
+29610 pts/28   T      0:00 galfit rms_galfit_n-7.feedme

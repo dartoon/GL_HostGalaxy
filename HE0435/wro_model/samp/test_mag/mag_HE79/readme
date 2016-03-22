@@ -1,0 +1,4 @@
+#ways to generate the information
+
+1.adjust the galfit.feedme 
+2.run gal.sh(crtrms.py---mask.py---galfit(30)---galoutp.py)

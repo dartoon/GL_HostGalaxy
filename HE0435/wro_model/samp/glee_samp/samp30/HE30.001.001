@@ -1,0 +1,86 @@
+# glee -M -i HE30.001
+
+chi2type           16
+minimiser       siman
+seed                2
+
+siman_iter          1
+siman_nT         1000
+siman_dS            5
+siman_Sf          1.1
+siman_k             2
+siman_Ti           10
+siman_Tf          1.2
+siman_Tmin          1
+
+mcmc_n          12001
+mcmc_dS           0.4
+mcmc_dSini          0
+mcmc_k              2
+
+sampling_f     gaussian
+sampling_cov   HE30.cov
+
+lenses_vary 2
+
+    spemd
+    3.983230  #x-coord   gaussian:3.9,0.08  label:lv1p1     step:0.08
+    3.951599  #y-coord   gaussian:3.9,0.08  label:lv1p2     step:0.08
+    0.832615  #b/a       flat:0.65,0.95  label:lv1p3     step:0.03
+    1.294970  #theta     noprior:  label:lv1p4     step:0.1
+    1.409735  #theta_e   flat:1.1,1.7  scale:  step:0.1
+  1.0000e-04  #r_core    exact:
+    0.430884  #gam       flat:0.2,0.6  step:0.01
+
+    shear
+  1.0000e-06  #magnitude  exact:
+    0.000000  #theta     exact:
+
+esources 1
+
+    Dds/Ds    1.000000  exact:
+    esource_ngy          30
+    esource_ngx          98
+    esource_dx           0.080000
+    esource_data         HE-30.fits
+    esource_err          rms-30.fits
+    esource_arcmask      mask-30.fits
+    esource_lensmask     lensmask.fits
+    esource_psf          psf-s-30.fits
+    esource_sub_agn_psf  psf-s-30.fits
+    esource_sub_agn_psf_factor     1
+    esource_sub_esr_psf  psf-s-30.fits
+    esource_sub_esr_psf_factor     1
+    esource_regtype      curv
+    esource_regopt       SpecRegPrecSigFigOnce
+    esource_reglam       18.3105
+    esource_reglamlo     1e-12
+    esource_reglamhi     100000
+    esource_reglampre    1
+    esource_reglamnup    1000
+    esource_light  5
+        sersic
+            3.983230  #x-coord   link:lv1p1  a:0,1,1
+            3.951599  #y-coord   link:lv1p2  a:0,1,1
+            0.841357  #q         flat:0.5,1  step:0.03
+            1.367425  #PA        noprior:  step:0.1
+            0.135635  #amp       noprior:  min:0.001  step:0.1
+            2.194990  #r_eff     flat:1.5,2.2  step:0.05
+            5.934172  #n_sersic  flat:4,7  step:0.1
+        psf
+            3.590595  #x-coord   noprior:  step:0.01
+            2.698184  #y-coord   noprior:  step:0.01
+          210.445875  #amp       noprior:  min:0  step:10
+        psf
+            4.308703  #x-coord   noprior:  step:0.01
+            5.295793  #y-coord   noprior:  step:0.01
+          292.361285  #amp       noprior:  min:0  step:10
+        psf
+            5.452521  #x-coord   noprior:  step:0.01
+            3.738726  #y-coord   noprior:  step:0.01
+          332.448578  #amp       noprior:  min:0  step:10
+        psf
+            2.640332  #x-coord   noprior:  step:0.01
+            4.562220  #y-coord   noprior:  step:0.01
+          414.471126  #amp       noprior:  min:0  step:10
+    esource_end

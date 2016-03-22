@@ -1,7 +1,0 @@
-import numpy as np
-import pyfits
-filename='samp1/mask-1.fits'
-d = pyfits.open(filename)[0].data.copy()
-print np.shape(d)
-a=np.reshape(d,(1,-1))
-print (len(a[a==1])*0.08**2/30**2)**0.5

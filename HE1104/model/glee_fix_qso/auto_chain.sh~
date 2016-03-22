@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in `seq 1 24`;do
+	sed "s/HE1/HE${i}/g" glee_chainout.sh > samp${i}/glee_chainout.sh
+	#rm -r samp${i}/mag_HE${i}
+done  

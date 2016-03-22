@@ -1,2 +1,0 @@
-# Compile with
-f2py -c -m powerlaw powerlaw.f

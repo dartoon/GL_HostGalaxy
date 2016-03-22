@@ -1,0 +1,60 @@
+# glee -M -i HE8
+
+chi2type           16
+minimiser       siman
+seed                2
+
+siman_iter          1
+siman_nT         1000
+siman_dS            5
+siman_Sf          1.1
+siman_k             2
+siman_Ti           10
+siman_Tf          1.2
+siman_Tmin          1
+
+mcmc_n           20000
+mcmc_dS          0.55
+mcmc_dSini          0
+mcmc_k              2
+
+sampling_f     gaussian
+sampling_cov   HE8.cov
+
+lenses_vary 2
+
+    spemd
+    3.908055  #x-coord   gaussian:3.94,0.08  label:lv1p1     step:0.08
+    3.909316  #y-coord   gaussian:3.94,0.08  label:lv1p2     step:0.08
+    0.708030  #b/a       flat:0.55,0.75  label:lv1p3     step:0.03
+   -1.369153  #theta     noprior:  label:lv1p4     step:0.1
+    1.642394  #theta_e   flat:1.5,2  scale:  step:0.1
+  1.0000e-04  #r_core    exact:
+    0.567879  #gam       flat:0.4,0.7  step:0.01
+
+    shear
+  1.0000e-06  #magnitude  exact:
+    0.000000  #theta     exact:
+
+esources 1
+
+    Dds/Ds    1.000000  exact:
+    esource_ngy          30
+    esource_dx           0.080000
+    esource_data         HE-8.fits
+    esource_err          rms-8.fits
+    esource_arcmask      mask-8.fits
+    esource_lensmask     lensmask.fits
+    esource_psf          psf-s-8.fits
+    esource_sub_agn_psf  psf-s-8.fits
+    esource_sub_agn_psf_factor     1
+    esource_sub_esr_psf  psf-s-8.fits
+    esource_sub_esr_psf_factor     1
+    esource_regtype      curv
+    esource_regopt       SpecRegPrecSigFigOnce
+    esource_reglam       878.906
+    esource_reglamlo     1e-12
+    esource_reglamhi     100000
+    esource_reglampre    1
+    esource_reglamnup    1000
+    esource_end
