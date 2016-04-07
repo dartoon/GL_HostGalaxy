@@ -1,0 +1,17 @@
+# Component/    parameter   constraint	Comment
+# operation	(see below)   range
+
+
+
+    1              n        1 to 4    # Soft constraint: Constrains the 
+					# sersic index n to within values 
+				        # from 0.7 to 5.
+
+  
+# Note on parameter column:
+#   The parameter name options are x, y, mag, re (or rs -- it doesn't matter),
+#   n, alpha, beta, gamma, pa, q, c, f1a (Fourier amplitude), f1p (Fourier
+#   phase angle), f2a, f2p, r5 (coordinate rotation), etc., .  Or 
+#   alternatively, one can specify the parameter number instead (for the
+#   classical parameters only) corresponding to the same numbers in the 
+#   galfit input file.

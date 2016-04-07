@@ -1,7 +1,7 @@
 
 #  Input menu file: galfit_n-24.feedme
 
-#  Chi^2/nu = 0.482,  Chi^2 = 309.316,  Ndof = 642
+#  Chi^2/nu = 0.179,  Chi^2 = 70.541,  Ndof = 393
 
 ================================================================================
 # IMAGE and GALFIT CONTROL PARAMETERS
@@ -38,15 +38,15 @@ P) 0                   # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
 
 # Component number: 1
  0) sersic                 #  Component type
- 1) 16.4970  15.5779  1 1  #  Position x, y
- 3) 20.9129     1          #  Integrated magnitude 
- 4) 6.0096      1          #  R_e (effective radius)   [pix]
+ 1) 16.5994  15.5409  1 1  #  Position x, y
+ 3) 20.4371     1          #  Integrated magnitude 
+ 4) 9.4423      1          #  R_e (effective radius)   [pix]
  5) 2.0000      0          #  Sersic index n (de Vaucouleurs n=4) 
  6) 0.0000      0          #     ----- 
  7) 0.0000      0          #     ----- 
  8) 0.0000      0          #     ----- 
- 9) 0.7458      1          #  Axis ratio (b/a)  
-10) -46.4618    1          #  Position angle (PA) [deg: Up=0, Left=90]
+ 9) 0.7174      1          #  Axis ratio (b/a)  
+10) -48.2213    1          #  Position angle (PA) [deg: Up=0, Left=90]
  Z) 0                      #  Skip this model in output image?  (yes=1, no=0)
 
 ================================================================================

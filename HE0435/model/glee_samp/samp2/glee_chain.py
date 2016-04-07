@@ -1,5 +1,5 @@
 import numpy,subprocess
-file1 = open('HE2.001.mcmc','r')      #should changed with right name
+file1 = open('HE2.001.001.mcmc','r')      #should changed with right name
 para = numpy.loadtxt(file1)[-30:,0]
 file1.close()
 i=int(para[0])

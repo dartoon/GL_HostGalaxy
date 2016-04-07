@@ -1,6 +1,6 @@
 #!/bin/bash
 #cd glee_samp
-for i in `seq 9 16`;do
+for i in `seq 17 24`;do
       j=$(((${i}-1)*4+1))
       cd samp${j}
       echo ${j}

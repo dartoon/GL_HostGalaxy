@@ -15,7 +15,7 @@ for l in range(ln):
 	stddlong=0.016
         stddshort=0.265
 	explong=599.
-	expshort=43.98
+	expshort=74.23
 	bnoifaint=(nn/(2*explong+expshort)+(expshort/(2*explong))**2*stddshort**2+2*stddlong**2/(4))**0.5			#cacul. noise	
 	bnoibright=(nn/expshort+stddshort**2)**0.5
         rms=bnoibright*[nn>30.]+bnoifaint*[nn<30.]                              #set threshold to allow 3-4 central pixels to be short exptim. Used to be 10, now is 70

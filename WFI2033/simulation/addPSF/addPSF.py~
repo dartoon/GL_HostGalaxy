@@ -20,7 +20,7 @@ for l in range(ln):
 	#print l
 	hsa = pyfits.open(filename)[0].data.copy()
 	(a1,a2),(b1,b2),(c1,c2),(d1,d2)=findpt(hsa)              #finding two corresponding positions where to add from two arcs
-	#print findpt(hsa)
+	print findpt(hsa)
 
 	#a1=181
 	#a2=181
@@ -53,7 +53,7 @@ for l in range(ln):
 		cel2[i+x2+180,j+y2+180]+=psf[i,j]
 		cel3[i+x3+180,j+y3+180]+=psf[i,j]
 		cel4[i+x4+180,j+y4+180]+=psf[i,j]
-	cell+=(cel1*323+cel2*492+cel3*867+cel4*467)*4/5           #add psf
+	cell+=(cel1*323+cel2*450+cel3*800+cel4*430)           #add psf
 	pyfits.PrimaryHDU(cell.T).writeto('../fits/bfadd-{0}.fits'.format(l+1),clobber=True)
 
 	sh= np.zeros([len(hs),len(hs)])        #shear the lager frame image to regular one

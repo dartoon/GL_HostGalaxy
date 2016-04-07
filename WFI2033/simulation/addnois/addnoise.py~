@@ -1,7 +1,7 @@
 import numpy as np
 import pyfits
 
-file1 = open('../pylens/HE0435.txt','r')
+file1 = open('../pylens/WFI2033.txt','r')
 para = np.loadtxt(file1)
 file1.close()
 #print len(para)
